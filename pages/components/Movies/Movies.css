@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.movie-container{
+    padding: 10px;
+}
+.title{
+   padding-left: 10px;
+   font-size: 16px;
+}
+@media screen and (min-width:760px) {
+    .title{
+        font-size: 28px;
+    }
+}
