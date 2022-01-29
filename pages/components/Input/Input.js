@@ -1,9 +1,9 @@
-import {SearchOutlined} from "@mui/icons-material"
+import {Search} from "@mui/icons-material"
 
 export default function Input() {
     return (
       <div className="search-container" >
-        <SearchOutlined />
+        <Search className="btn" />
        <input placeholder='Search movies and Click enter' />
       </div>
     )
