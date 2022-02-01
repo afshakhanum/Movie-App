@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -24,9 +26,12 @@ div{
 .MovName{
     color: white;
     padding-bottom: 30px;
+    font-family: Abel,sans-serif;
 }
 .Descrptn{
     color: white;
+    font-family: Abel,sans-serif;
+    font-size: 18px;
 }
 .content{
     width: 80%;
@@ -37,6 +42,10 @@ div{
 
 @media screen and (min-width:1000px) {
     .content{
-        width: 60%;
+        width: 50%;
+        margin-left: 20px;
+    }
+    .Descrptn{
+        font-size: 1.5rem;
     }
 }

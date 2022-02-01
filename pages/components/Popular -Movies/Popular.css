@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.cards{
+    display: inline-block;
+}
+.movie-tiles{
+    width: 220px;
+    height: auto;
+    margin : auto;
+    transition: all 0.3s ease 0s;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgb(0 0 0 / 27%) 10px 10px 33px -4px;
+    display: inline-block;
+    margin: 20px;
+    margin-left: 25px;
+}
+
+.movie-tiles:hover{
+    filter :blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
