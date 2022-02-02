@@ -22,8 +22,8 @@ export default function Home() {
   console.log(data);
  function mapping(){
    return(
-    data.map(item => (
-      <Popular src={item.poster_path}/>
+    data.map(item,id => (
+      <Popular key={id} src={item.poster_path}/>
     ))
    )
  }
