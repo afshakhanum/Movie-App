@@ -5,11 +5,13 @@ import Movies from './components/Movies/Movies'
 import styles from '../styles/Home.module.css'
 import Popular from './components/Popular -Movies/Popular'
 import React, { useState, useEffect } from "react";
-import Button from './components/Button/Button'
 
 export default function Home() {
   const [data, setData] = useState([]);
-
+  const [Visible, setVisible] = useState(5);
+  const loadmore = () => {
+    setVisible((Visible) => Visible+5)
+  }
   useEffect(() => {
     moviePromise();
   }, []);
@@ -22,7 +24,7 @@ export default function Home() {
   console.log(data);
  function mapping(){
    return(
-    data.map(item,id => (
+    data.slice(0,Visible).map((item,id) => (
       <Popular key={id} src={item.poster_path}/>
     ))
    )
@@ -33,8 +35,12 @@ export default function Home() {
      <Poster/>
      <Input />
      <Movies />
-      {mapping()}
-     <Button />
+     <div className='movie'>
+     {mapping()}
+     </div>
+      <div className="btn-container" >
+      <button onClick={loadmore} className="btn1" >Load more</button>
+     </div>
    </div>
   )
 }
