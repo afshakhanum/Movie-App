@@ -13,8 +13,70 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}.cards{
+  display: inline-block;
+}
+.movie-tiles{
+  width: 220px;
+  height: auto;
+  margin : auto;
+  transition: all 0.3s ease 0s;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 27%) 10px 10px 33px -4px;
+  display: inline-block;
+  margin: 20px;
 }
 
+.movie-tiles:hover{
+  filter :blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+}
+.search-container{
+    width: 100%;
+    height: 90px;
+    background: rgb(0, 0, 0);
+    padding: 25px 20px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    animation: 1s ease 0s 1 normal none running animateBar;
+}
+.btn{
+   font-size: 2rem;
+   margin-top: 8px;
+   margin-left: 10px;
+}
+input{
+    font-family: Abel, sans-serif;
+    font-size: 16px;
+    position: absolute;
+    left: 20px;
+    margin: 4px 0px;
+    padding: 0px 0px 0px 40px;
+    border: 1px solid black;
+    width: 90%;
+    background: transparent;
+    height: 40px;
+    color: white;
+}
+@media screen and (min-width:1000px) {
+    .search-container{
+        height: 100px;
+    }
+    input{
+        width: 90%;
+        position: absolute;
+        left: 40px;
+        font-size: 28px;
+        padding: 0px 0px 0px 40px;
+        border: 1px solid black;
+    }
+    .btn{
+        font-size: 2.2rem;
+        margin-left: 20px;
+    }
+}
 .btn-container{
   display: flex;
   justify-content: center;
