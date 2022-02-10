@@ -42,7 +42,7 @@ export default function Home() {
       }
       else{
         return movies.slice(0, Visible).map((movie) => 
-          <Link href={`/components/${movie.id}`}>
+          <Link href={`/components/${key}`}>
           <div key={movie.id} className="cards" >
           <img className="movie-tiles" src={img1 + movie.poster_path} alt="" />
           </div>
