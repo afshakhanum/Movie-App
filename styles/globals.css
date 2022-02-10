@@ -60,44 +60,202 @@ input{
     height: 40px;
     color: white;
 }
+.p1{
+  font-size: 22px;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header2{
+  margin: 0px auto;
+  padding: 0px 20px;
+  width: 100%;
+  align-items: center;
+  height: 70px;
+  background: rgb(53, 53, 53);
+  color: white;
+  display: flex;
+}
+.back_drop{
+  width: 100%;
+  height: 980px;
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+}
+.background1{
+  height: 170vh;
+  width: 90%;
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 20px;
+  margin: auto;
+}
+.background1{
+  position: absolute;
+  top: 150px;
+  left: 15px;
+}
+.poster-img{
+  width: 90%;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+  left: 15px;
+}
+.details{
+  position: absolute;
+  top: 600px;
+  left: 18%;
+  width: 70%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.p2{
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.rating{
+  background-color: white;
+  color: black;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.box{
+  height: 80px;
+  background-color: black;
+  display: block;
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: Abel,sans-serif;
+}
+.box1{
+  color: white;
+}
+.box11{
+  padding: 0px 5px;
+}
+.actors{
+  margin-left: 40px; 
+}
+.card-tiles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.actors-box{
+  background-color:white;
+  width: 250px;
+  height: auto;
+  margin: 30px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 27%) 10px 10px 33px -4px;
+}
+.actor-img{
+  width: 250px;
+  border-radius: 30px;
+  height: 300px;
+  padding: 5px; 
+}
+.actors-title{
+  font-family: Abel,sans-serif;
+  text-align: center;
+}
+@media screen and (min-width:600px) {
+.back_drop{
+    height: 165vh;
+}
+.background1{
+  width:80%;
+  height:155vh;
+}
+.background1{
+  margin: auto;
+  margin-left: 60px;
+}
+.poster-img{
+  width: 80%;
+  height: 100vh;
+  margin-left: 60px;
+}
+.details{
+  position: absolute;
+  top: 900px;
+  left : 15%;
+}
+}
 @media screen and (min-width:1000px) {
-    .search-container{
-        height: 100px;
-    }
-    input{
-        width: 90%;
-        position: absolute;
-        left: 40px;
-        font-size: 28px;
-        padding: 0px 0px 0px 40px;
-        border: 1px solid black;
-    }
-    .btn{
-        font-size: 2.2rem;
-        margin-left: 20px;
-    }
+.search-container{
+  height: 100px;
+ }
+input{
+  width: 90%;
+  position: absolute;
+  left: 40px;
+  font-size: 28px;
+  padding: 0px 0px 0px 40px;
+  border: 1px solid black;            
+}
+.btn{
+  font-size: 2.2rem;
+  margin-left: 20px;
+}
 }
 .btn-container{
   display: flex;
   justify-content: center;
 }
 .btn1{
-          background: linear-gradient(
-          90deg , rgb(2, 0, 36) 0%, rgb(9, 9, 121) 68%, rgb(139, 0, 255) 100%);
-          width: 25%;
-          min-width: 200px;
-          height: 70px;
-          color: rgb(255, 255, 255);
-          cursor: pointer;
-          transition: all 0.3s ease 0s;
-          border-radius: 10px;
-          font-family: Abel, sans-serif;
-          font-size: 28px;
-          border: 0px;
-          max-width: 1280px;
-          display: block;
-          margin: 20px auto;
-          padding: 0px 20px;
-          outline: none;
-          box-shadow: rgb(139 0 255 / 40%) 5px 10px 10px -4px;
+  background: linear-gradient(
+  90deg , rgb(2, 0, 36) 0%, rgb(9, 9, 121) 68%, rgb(139, 0, 255) 100%);
+  width: 25%;
+  min-width: 200px;
+  height: 70px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+  font-family: Abel, sans-serif;
+  font-size: 28px;
+  border: 0px;
+  max-width: 1280px;
+  display: block;
+  margin: 20px auto;
+  padding: 0px 20px;
+  outline: none;
+  box-shadow: rgb(139 0 255 / 40%) 5px 10px 10px -4px;
+}
+.back_drop{
+  height: 95vh;
+}
+.background1{
+  height: 80vh;
+  width: 90%;
+  position: absolute;
+  top: 200px;
+}
+.poster-img{
+  width: 30%;
+  height: 80vh;
+  margin-top: 50px;
+}
+.details{
+  width: 50%;
+  position: absolute;
+  top:260px ;
+  left: 550px;
+}
+.box1{
+  font-size: 2rem;
+}
+.box{
+  height:110px;
+}
+.p2{
+  font-size: 1.4rem;
 }

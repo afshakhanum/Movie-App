@@ -2,9 +2,10 @@ import Poster from './components/Poster/Poster'
 import Header from './components/Header/Header'
 import Movies from './components/Movies/Movies'
 import styles from '../styles/Home.module.css'
-import Popular from './components/Popular -Movies/Popular'
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import Search from '@mui/icons-material/Search';
+import Link from 'next/link'
+import Routing from 'next/router'
 
 export default function Home() {
   const [movies, setData] = useState([]);
@@ -18,7 +19,6 @@ export default function Home() {
   useEffect(() => {
     moviePromise();
   }, []);
-
   
   const moviePromise = () => {
     fetch("https://api.themoviedb.org/3/movie/popular?api_key=0122f66b835be1351367d17f60ca287b&language=en-US&page=1")
@@ -42,13 +42,15 @@ export default function Home() {
       }
       else{
         return movies.slice(0, Visible).map((movie) => 
+          <Link href={`/components/${movie.id}`}>
           <div key={movie.id} className="cards" >
           <img className="movie-tiles" src={img1 + movie.poster_path} alt="" />
           </div>
+          </Link>
       )
     }
 }
-  console.log(movies);
+  // console.log(movies);
 
   return (
     <div className={styles.container}>
@@ -56,7 +58,7 @@ export default function Home() {
      <Poster/>
      <div className="search-container" >
         <Search className="btn" />
-       <input placeholder='Search movies and Click enter' onChange={(e) => setSearch(e.target.value)} />
+       <input placeholder='Search movies' onChange={(e) => setSearch(e.target.value)} />
      </div>
      <Movies />
      <div className='movie'>
