@@ -17,10 +17,10 @@ export default function Home() {
     setVisible((Visible) => Visible+5)
   }
   useEffect(() => {
-    moviePromise();
+    MoviePromise();
   }, []);
   
-  const moviePromise = () => {
+  const MoviePromise = () => {
     fetch("https://api.themoviedb.org/3/movie/popular?api_key=0122f66b835be1351367d17f60ca287b&language=en-US&page=1")
       .then((response) => response.json())
       .then((recievedData) => setData(recievedData.results));

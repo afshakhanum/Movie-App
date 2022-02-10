@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import axios from "axios";
-import Header from './Header/Header'
+import Header from './Header/Header';
+import Link from 'next/link'
 
-function movie() {
+function Detailpage() {
     const router = useRouter();
     const [mov, setMov] = React.useState([]);
     const [char, setChar] = React.useState([]);
@@ -61,7 +62,7 @@ function movie() {
     <div>
         <Header />
         <div className='header2'>
-         <a href="/"><h1 className='p1'>Home</h1></a>
+         <Link href="/"><h1 className='p1'>Home</h1></Link>
           <p className='p1'>|</p>
           <p className='p1'>{mov.title}</p>
       </div>
@@ -103,4 +104,4 @@ function movie() {
 )
 }
 
-export default movie
+export default Detailpage
