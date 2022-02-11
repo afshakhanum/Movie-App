@@ -41,16 +41,16 @@ export default function Home() {
       )
       }
       else{
-        return movies.slice(0, Visible).map((movie,index) => 
+        return movies.slice(0, Visible).map((movie,id) => 
           <Link href={`/components/${movie.id}`}>
-          <div key={index} className="cards" >
+          <div key={id} id={movie.id} className="cards" >
           <img className="movie-tiles" src={img1 + movie.poster_path} alt="" />
           </div>
           </Link>
       )
     }
 }
-  // console.log(movies);
+  console.log('testing',movies);
 
   return (
     <div className={styles.container}>
