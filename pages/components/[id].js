@@ -78,6 +78,9 @@ function Detailpage() {
               <p className='rating'>{mov.vote_average}</p>
           </div>
           </div>
+          <div>
+              <img className='poster-img' src={img_two + mov.poster_path} alt='' />
+          </div>
           <div className='box'>
               <div className='box11'>
                   <p className='box1'>Running Time:</p>
@@ -94,9 +97,6 @@ function Detailpage() {
                   <p className='box1'>${mov.revenue}</p>
               </div>
 
-          </div>
-          <div>
-              <img className='poster-img' src={img_two + mov.poster_path} alt='' />
           </div>
          
           <h1 className='actors-title'>Actors</h1>
