@@ -13,7 +13,8 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-}.cards{
+}
+.cards{
   display: inline-block;
 }
 .movie-tiles{
@@ -247,8 +248,9 @@ input{
 .details{
   width: 50%;
   position: absolute;
-  top:260px ;
+  top:160px ;
   left: 550px;
+  font-weight: bolder;
 }
 .box1{
   font-size: 2rem;
