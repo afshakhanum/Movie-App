@@ -4,8 +4,8 @@ export default function Poster() {
       <div className="container" >
       <div className="img1">
          <div className="content">
-         <h1 className="MovName">Spider-Man:No Way Home</h1>
-          <p className="Descrptn">Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.</p>
+         <h1 className="MovName">The Requin</h1>
+          <p className="Descrptn">A couple on a romantic getaway find themselves stranded at sea when a tropical storm sweeps away their villa. In order to survive, they are forced to fight the elements, while sharks circle below.</p>
          </div>
       </div>
       </div>
