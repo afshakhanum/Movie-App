@@ -66,7 +66,7 @@ function Detailpage() {
           <p className='p1'>|</p>
           <p className='p1'>{mov.title}</p>
       </div>
-          <div >
+          <div>
               <img className='back_drop' src={img_one + mov.backdrop_path} alt=""></img>
               <div className='flex1'>
               <div  className='background1' >
