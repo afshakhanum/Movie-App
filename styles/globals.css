@@ -80,7 +80,7 @@ input{
   width: 100%;
   object-fit: cover;
   height: 1000px;
-  object-position: center;
+  /* object-position: center; */
 }
 .background1{
   width:80%;
@@ -98,17 +98,15 @@ input{
   width: 100%;
 }
 .details1{
-  width:125%;
-
+  width:100%;
 }
 .details2{
   width: 90%;
   color: white;
 }
 .poster-img{
-  width: 80%;
+  width: 100%;
   border-radius: 20px;
-  margin: 0 auto;
 }
 .poster-img:hover{
   filter :blur(0px);
