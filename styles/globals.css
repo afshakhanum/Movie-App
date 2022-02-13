@@ -111,7 +111,11 @@ input{
   border-radius: 20px;
   margin: 0 auto;
 }
-
+.poster-img:hover{
+  filter :blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+}
 .p2{
   padding: 10px 0px;
   font-size: 18px;
