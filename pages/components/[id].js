@@ -66,21 +66,24 @@ function Detailpage() {
           <p className='p1'>|</p>
           <p className='p1'>{mov.title}</p>
       </div>
-      <div>
-        <img className='back_drop' src={img_one + mov.backdrop_path} alt="" />
-          </div>
-          <div className='background1'>
-          <div className='details'>
-              <h1>{mov.title}</h1>
-              <h3 className='p2'>PLOT</h3>
-              <p className='p2'>{mov.overview}</p>
-              <h3 className='p2'>IMDB RATING</h3>
-              <p className='rating'>{mov.vote_average}</p>
-          </div>
-          </div>
-          <div>
-              <img className='poster-img' src={img_two + mov.poster_path} alt='' />
-          </div>
+          <div >
+              <img className='back_drop' src={img_one + mov.backdrop_path} alt=""></img>
+              <div className='flex1'>
+              <div  className='background1' >
+              <div className='details'>
+                  <div className='details1'> 
+                      <img className='poster-img' src={img_two + mov.poster_path} alt='' /></div>
+                <div className='details2'>
+                <h1>{mov.title}</h1>
+                <h3 className='p2'>PLOT</h3>
+                <p className='p2'>{mov.overview}</p>
+                <h3 className='p2'>IMDB RATING</h3>
+                <p className='rating'>{mov.vote_average}</p>
+                </div>
+           </div>
+              </div>
+              </div>
+              </div >
           <div className='box'>
               <div className='box11'>
                   <p className='box1'>Running Time:</p>

@@ -15,11 +15,13 @@ div{
 .logo1{
     width: 120px;
     margin-top: 25px;
+    color: white;
 }
 .logo2{
     width: 80px;
     margin-top: 20px;
     float: right;
+    color: white;
 }
 @media screen and (min-width:760px) {
     .logo1{
