@@ -16,7 +16,7 @@ div{
     width: 100%;
     height: 600px;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0) 41%, rgba(0, 0, 0, 0.65) 100%), url("https://image.tmdb.org/t/p/w1280/eVSa4TpyXbOdk9fXSD6OcORJGtv.jpg"), initial;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0) 41%, rgba(0, 0, 0, 0.65) 100%), url("https://image.tmdb.org/t/p/w1280/eNI7PtK6DEYgZmHWP9gQNuff8pv.jpg"), initial;
     background-position-x: center, center !important;
     background-position-y: center, center !important;
     background-size: 100%, cover !important;
